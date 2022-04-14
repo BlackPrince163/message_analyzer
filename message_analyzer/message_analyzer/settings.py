@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'analyzer',
     'rest_framework',
     'djoser',
-    'corsheaders'
+    'corsheaders',
 ]
 
 MIDDLEWARE = [

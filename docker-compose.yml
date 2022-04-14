@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:11.1-alpine
+    ports:
+      - "5431:5431"
+    environment:
+      POSTGRES_DB: analyzer
+      POSTGRES_USER: analyzer
+      POSTGRES_PASSWORD: analyzer
+    volumes:
+      - db:/var/lib/postgresql/data
+
+
+volumes:
+  db:

@@ -17,4 +17,4 @@ class Message(models.Model):
     datetime = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return "{}, content: {}. Status: {}".format(self.user, self.content, self.get_status_display())
+        return "{}, content: {}. Status: {}".format(self.user_id, self.content, self.get_status_display())

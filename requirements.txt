@@ -23,6 +23,9 @@ django-templated-mail==1.1.1
 djangorestframework==3.13.1
 djangorestframework-simplejwt==4.8.0
 djoser==2.1.0
+dnspython==2.2.1
+eventlet==0.33.0
+greenlet==1.1.2
 idna==3.3
 itypes==1.2.0
 Jinja2==3.1.1
@@ -36,6 +39,7 @@ psycopg2-binary==2.9.3
 pycparser==2.21
 PyJWT==2.3.0
 pyparsing==3.0.8
+python-dotenv==0.20.0
 python3-openid==3.2.0
 pytz==2022.1
 redis==4.2.2

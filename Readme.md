@@ -13,5 +13,5 @@
 
 ## Дополнительные задания
 1. Docker и Docker-compose файлы
-
+2. JWT Authorization
 

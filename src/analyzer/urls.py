@@ -1,9 +1,9 @@
 from django.urls import path
 
-from .views import MessageListView, MessageCreateView
+from .views import MessageListView, MessageCreateView, UpdateStatusMessageView
 
 urlpatterns = [
-    path('message/all', MessageListView.as_view()),
+    path('v1/message/all', MessageListView.as_view()),
     path('v1/message', MessageCreateView.as_view()),
-    # path('/api/v1/message_confirmation'),
+    path('v1/message_confirmation', UpdateStatusMessageView.as_view()),
 ]

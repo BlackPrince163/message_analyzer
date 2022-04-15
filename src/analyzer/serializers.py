@@ -30,9 +30,3 @@ class CreateMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Message
         fields = ['user_id', 'message']
-
-
-
-class UpdateStatusMessageSerializer(serializers.Serializer):
-    message_id = serializers.IntegerField()
-    success = serializers.BooleanField()

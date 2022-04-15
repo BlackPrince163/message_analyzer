@@ -1,3 +1,4 @@
+from django.db.models.signals import post_save
 from django.utils import timezone
 
 from django.db import models
@@ -16,5 +17,7 @@ class Message(models.Model):
     status = models.CharField(choices=STATUS, default='1', max_length=1)
     datetime = models.DateTimeField(default=timezone.now)
 
+
     def __str__(self):
         return "{}, content: {}. Status: {}".format(self.user_id, self.content, self.get_status_display())
+

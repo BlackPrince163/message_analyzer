@@ -13,4 +13,10 @@ def test_task(message_id):
     if message.content.upper() == "АБРАКАДАБРА":
         success = True
     param_request = {'message_id': message_id, 'success': success}
-    requests.post('http://127.0.0.1:8000/api/v1/message_confirmation', data=param_request)
+
+    response = requests.post("http://localhost:8000/api/token/", data={"username": "admin", "password": "admin"})
+    access = response.json()["access"]
+    headers = {"Authorization": f"Bearer {access}"}
+    print(headers)
+
+    requests.post('http://127.0.0.1:8000/api/v1/message_confirmation', headers=headers, data=param_request)

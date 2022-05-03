@@ -1,4 +1,6 @@
 # message_analyzer
+Тестовое задание в команду Рериком (Junior Python Разработчик)
+[Задание](http://file.karelia.ru/8f8d7q/)
 
  [ПРОЕКТИРОВАНИЕ БД](https://drive.google.com/file/d/1MBpDzxMBGHr5QQwQ3mZeQAZXjIrCvgBm/view?usp=sharing)
  
